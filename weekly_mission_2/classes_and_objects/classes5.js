@@ -15,7 +15,7 @@ class PullRequest {
 
 console.log("Ejemplo 5: Atributos con valores por default");
 const myPR1 = new PullRequest("LaunchX", "Mi Primer PR", 100);
-console.log(myPR1.getInfo());
+console.table(myPR1.getInfo()); // console.table no funciona ya que se imprime una función directamente y no data de un objeto como tal
 
 // Puedes instanciar n cantidad de objetos de la misma clase
 const myPR2 = new PullRequest("LaunchX", "Mi segundo PR", 99);
