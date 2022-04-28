@@ -11,7 +11,7 @@ class Ajolonauta {
 
   // Podemos acceder a los atributos de esta clase
   get getExercisesCompleted() {
-    return this.exercises_completed;
+    return this.name;
   }
 }
 
