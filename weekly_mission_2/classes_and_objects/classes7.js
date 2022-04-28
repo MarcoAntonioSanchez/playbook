@@ -34,5 +34,5 @@ console.log(missionCommanderNode.getLives); // 0 por default
 missionCommanderNode.setStudents = 100;
 missionCommanderNode.setLives = 3;
 
-console.log(missionCommanderNode.getStudents); // 0 por default
-console.log(missionCommanderNode.getLives); // 0 por default
+console.log(missionCommanderNode.getStudents); // 0 ahora arroja 100
+console.log(missionCommanderNode.getLives); // 0 ahora arroja 3
