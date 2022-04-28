@@ -1,7 +1,7 @@
 {
   "name": "First_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "package.json contiene una línea que dice jest: ^27.5.1, esto refiere a que descargará esta dependencia para usarla en nuestro proyecto.",
   "main": "main.js",
   "type": "module",
   "scripts": {
