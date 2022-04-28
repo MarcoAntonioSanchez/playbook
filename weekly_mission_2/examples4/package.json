@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "package json": {
+    "fyi": "package.json es un archivo json que nos permite definir la configuración de cualquier proyecto de node"
+  }
 }
