@@ -4,7 +4,7 @@ const issue = {
   status: "testing",
   numberOfCommits: 28,
   labels: "exercise",
-  author: "MarcoAntonioSanchez",
+  author: " MarcoAntonioSanchez",
   dateCreated: "April 22",
   lastUpdated: "April 22",
   getTitleAndAuthor: function () {
@@ -15,6 +15,6 @@ const issue = {
   },
 };
 
-console.log("Titulo:" + issue.title);
+console.log("Titulo: " + issue.title);
 console.log("Titulo y author: " + issue.getTitleAndAuthor());
 console.log(issue.getGeneralInfo());
