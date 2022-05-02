@@ -1,29 +1,26 @@
-const profile = {
-  name: "José Luis",
-  carModel: "Tesla model x",
-  carPlates: "01-RVN-X0",
-  trips: 500,
-  rating: 9.5,
-  years: 2,
-  lenguaje: "English",
-  country: "US",
-  city: "California",
-  funFact: "Recomendatios about museums and concerts",
-  favoriteUberStory: "Best ride of my life",
-  riderCompliments: [
-    "Very fast",
-    "Nice person",
-    "Recomended for a quick and quality service",
-  ],
-  riderThankYouNotes: 1,
-  getTotalMetrics: function () {
-    return this.trips + this.rating + this.years;
+const travel = {
+  startingLocation: "pickup address goes here",
+  finalDestination: "drop address goes here",
+  estimatedTime: "45:00 mints.",
+  ellapsedTime: "05:33 mints.",
+  driver: "José Luis",
+  passenger: "Rigoberto",
+  getDestinationEstTime: function () {
+    return this.finalDestination + this.estimatedTime;
   },
-  getTotalCompliments: function () {
-    return this.riderCompliments.length;
+  getDriversName: function () {
+    return this.driver;
+  },
+  getPassengersName: function () {
+    return this.passenger;
   },
 };
 
-console.log("Nombre del conductor: " + profile.name);
-console.log("Calificación: " + profile.getTotalMetrics());
-console.log(profile.getTotalCompliments());
+console.log(
+  "Tiempo estimado y destino final: " +
+    travel.estimatedTime +
+    " " +
+    travel.finalDestination
+);
+console.log("Conductor: " + travel.getDriversName());
+console.log("Pasajero: " + travel.getPassengersName());
