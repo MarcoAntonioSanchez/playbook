@@ -50,26 +50,31 @@ const explorers = [
 console.log(
   "\n Imprime el nombre (propiedad name) de cada explorer en la lista, usa FOR EACH \n"
 );
-explorers.forEach((item, index, arr) => {
-  console.log(item.name);
+explorers.forEach((explorerName) => {
+  console.log("Nombre: " + explorerName.name);
 });
 
 console.log("\n Imprime el stack de cada explorer, usa FOR EACH \n");
 
-explorers.forEach((item, index, arr) => {
-  console.log(item.stack);
+explorers.forEach((explorerStack) => {
+  console.log("Stack: " + explorerStack.stack);
 });
 
 console.log(
   "\n Crea una nueva lista con las listas de stacks de cada explorer, usa MAP \n"
 );
 
-const stackArray = explorers.map((x) => {
-  return x.stack;
+const stackArray = explorers.map((stacks) => {
+  return stacks.stack;
 });
 
-console.log(stackArray);
+console.log("Stacks: " + stackArray);
 
 console.log(
-  "\n Obtén la lista de explorers que tengan en su stack 'js', usa FILTER (para validar un elemento en un lista se usa el método includes) \n"
+  "\n Obtén la lista de explorers que tengan en su stack 'js', usa FILTER (para validar un elemento en una lista se usa el método includes) \n"
 );
+
+const explorersJs = explorers.filter((myExplorer) =>
+  myExplorer.stack.includes("js")
+);
+console.log(explorersJs);
