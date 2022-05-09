@@ -97,3 +97,13 @@ console.log(allExercises);
 console.log(
   "\n Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME \n"
 );
+
+const anyFinished = explorers.some(
+  (user) => user.missions.frontend.exercisesFinished === true
+);
+console.log(anyFinished);
+// console.log(explorers[0].missions.frontend.isFinished);
+
+console.log(
+  "\n Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY \n"
+);
