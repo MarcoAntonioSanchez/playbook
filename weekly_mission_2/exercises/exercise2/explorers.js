@@ -78,3 +78,22 @@ const explorersJs = explorers.filter((myExplorer) =>
   myExplorer.stack.includes("js")
 );
 console.log(explorersJs);
+
+console.log("\n Busca el primer explorer que sea de la CDMX, usa FIND \n");
+
+const first_explorer_city_cdmx = explorers.find(
+  (myExplorerInList) => myExplorerInList.city === "CDMX"
+);
+console.log(first_explorer_city_cdmx);
+
+console.log("\n Obtén la suma de todos los exercises_completed, usa REDUCE \n");
+
+const allExercises = explorers.reduce(
+  (acc, myExplorerInList) => acc + myExplorerInList.exercises_completed,
+  0
+);
+console.log(allExercises);
+
+console.log(
+  "\n Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME \n"
+);
