@@ -7,16 +7,30 @@ const bio = {
   friends: 100,
   followers: 5,
   pictures: ["profile pictures", "portrait", "uploads"],
-  getInterests: function () {
-    return (
-      this.interests[0] + ", " + this.interests[1] + ", " + this.interests[4]
-    );
-  },
-  getGeneralInfo: function () {
-    return `This facebook bio belongs to: ${this.profile} and says: ${this.about}`;
-  },
 };
 
-console.log("Perfil de la biografía: " + bio.profile);
-console.log("Intereses: " + bio.getInterests());
-console.log(bio.getGeneralInfo());
+class newBio {
+  constructor(profile, about, birthday, relationStatus, friends, followers) {
+    this.profile = profile;
+    this.about = about;
+    this.birthday = birthday;
+    this.relationStatus = relationStatus;
+    this.friends = friends;
+    this.followers = followers;
+  }
+
+  checkBio() {
+    return `${this.profile} is a brand new bio profile`;
+  }
+}
+
+const facebookBio = new newBio(
+  "@NewProfile",
+  "This is a new profile",
+  "01 01 01",
+  true,
+  01,
+  01
+);
+console.log(facebookBio);
+console.log(facebookBio.checkBio());
