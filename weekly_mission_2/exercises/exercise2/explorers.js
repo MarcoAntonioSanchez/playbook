@@ -107,3 +107,8 @@ console.log(anyFinished);
 console.log(
   "\n Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY \n"
 );
+
+const anyOnboardingFinished = explorers.every(
+  (user) => user.missions.onboarding.isFinished === true
+);
+console.log(anyOnboardingFinished);
