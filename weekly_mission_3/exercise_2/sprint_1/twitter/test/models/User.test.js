@@ -1,7 +1,7 @@
 const User = require("./../../app/models/User");
 
 describe("Unit Tests for User class", () => {
-  TextDecoderStream("Create an User object", () => {
+  test("Create an User object", () => {
     // Aquí invocas el código que vas a usar en tu app
     const user = new User(
       1,
