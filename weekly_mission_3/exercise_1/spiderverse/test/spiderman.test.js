@@ -1,3 +1,5 @@
+const Spiderman = require("./../app/spiderman");
+
 describe("Unit Tests for Spiderman class", () => {
   test("1) Create an spiderman object", () => {
     // Aquí escribimos el código que queremos usar tal cuiál
@@ -6,8 +8,13 @@ describe("Unit Tests for Spiderman class", () => {
       "Spiderman Sony",
       31,
       "Andrew Garfield",
-      2
+      31,
+      "Sony"
     );
-    expect(resultOfSomething).toBe(18);
+    expect(andrewGarfield.name).toBe("Spiderman Sony");
+    expect(andrewGarfield.age).toBe(31);
+    expect(andrewGarfield.actor).toBe("Andrew Garfield");
+    expect(andrewGarfield.movies).toBe(31);
+    expect(andrewGarfield.studio).toBe("Sony");
   });
 });
