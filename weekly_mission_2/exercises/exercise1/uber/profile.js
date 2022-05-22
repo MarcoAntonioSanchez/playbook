@@ -15,15 +15,6 @@ const profile = {
     "Nice person",
     "Recomended for a quick and quality service",
   ],
-  riderThankYouNotes: 1,
-  getTotalMetrics: function () {
-    return this.trips + this.rating + this.years;
-  },
-  getTotalCompliments: function () {
-    return this.riderCompliments.length;
-  },
 };
 
-console.log("Nombre del conductor: " + profile.name);
-console.log("Calificación: " + profile.getTotalMetrics());
-console.log(profile.getTotalCompliments());
+console.log(profile);
