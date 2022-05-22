@@ -21,15 +21,13 @@ describe("Unit Tests for Spiderman class", () => {
   test("2) We want a method that returns the following information: name and studio /n example /n tomHolland.getInfo() this needs to return: Hey, I'm Tom Holland from Marvel studio", () => {
     const tomHolland = new Spiderman(
       "Spiderman Marvel",
-      23,
+      25,
       "Tom Holland",
       5,
       "Marvel studio"
     );
-    expect(tomHolland.name).toBe("Spiderman Marvel");
-    expect(tomHolland.age).toBe(23);
-    expect(tomHolland.actor).toBe("Tom Holland");
-    expect(tomHolland.movies).toBe(5);
-    expect(tomHolland.studio).toBe("Marvel studio");
+    expect(tomHolland.getInfo()).toBe(
+      "Hey, i'm Tom Holland from Marvel studio"
+    );
   });
 });
