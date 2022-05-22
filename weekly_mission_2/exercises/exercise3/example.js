@@ -35,6 +35,7 @@ console.log(woopa_obj_js);
 
 const woopa = new Ajolonauta("Woopa", "Node JS", 18, "Pink"); // instanciar un objeto
 console.log(woopa);
+console.log(woopa.sayHello());
 
 const wooper = new Ajolonauta("Wooper", "Java", "10", "Blue");
 console.log(wooper.name);
