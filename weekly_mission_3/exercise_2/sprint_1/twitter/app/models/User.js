@@ -7,6 +7,9 @@ class User {
     this.dateCreated = dateCreated;
     this.lastUpdated = lastUpdated;
   }
+  showInfo() {
+    return `Id: ${this.id} /n User name: ${this.username} /n Name: ${this.name} /n Bio: ${this.bio} /n Created on: ${this.dateCreated} /n Updated on: ${this.lastUpdated}`;
+  }
 }
 
 module.exports = User;
