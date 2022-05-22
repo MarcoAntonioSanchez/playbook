@@ -7,17 +7,9 @@ const repo = {
   forks: 299,
   issues_open: 10,
   issues_close: 10,
-  getTotalIssues: function () {
-    return this.issues_open + this.issues_close;
-  },
-  getGeneralInfo: function () {
-    return `This repository ${this.name} was created by ${this.author}`;
-  },
 };
 
-console.log("Nombre del repo:" + repo.name);
-console.log("Issues totales: " + repo.getTotalIssues());
-console.log(repo.getGeneralInfo());
+console.log(repo);
 
 const issue = {
   title: "duda número 1",
@@ -28,16 +20,9 @@ const issue = {
   author: "MarcoAntonioSanchez",
   dateCreated: "April 21",
   lastUpdated: "April 22",
-  getTitleAndAuthor: function () {
-    return this.title + " por: " + this.author;
-  },
-  getGeneralInfo: function () {
-    return `This issue was created on: ${this.dateCreated} and last updated on: ${this.lastUpdated}`;
-  },
 };
 
-console.log(issue.getTitleAndAuthor());
-console.log(issue.getGeneralInfo());
+console.log(issue);
 
 const pullRequest = {
   title: "PR número 1",
@@ -45,13 +30,6 @@ const pullRequest = {
   dateCreated: "April 23",
   status: "estado",
   repositoryNameAssociated: "Marco",
-  getStatus: function () {
-    return this.status;
-  },
-  getTitleAndAuthor: function () {
-    return `This pull request ${this.title} was created by ${this.repositoryNameAssociated}`;
-  },
 };
 
-console.log(pullRequest.getStatus());
-console.log(pullRequest.getTitleAndAuthor());
+console.log(pullRequest);
