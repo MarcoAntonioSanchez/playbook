@@ -1,7 +1,7 @@
-const UserService = require("./../../app/services/UserService");
+const UserService = require("../../app/services/UserService");
 
 describe("Tests for UserService", () => {
-  TextDecoderStream("1. Create a new user using the UserService", () => {
+  test("1. Create a new user using the UserService", () => {
     const user = UserService.create(1, "carlogilmar", "Carlo");
     expect(user.username).toBe("carlogilmar");
     expect(user.name).toBe("Carlo");
