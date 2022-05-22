@@ -11,14 +11,6 @@ const user = {
   responses: 10,
   media: 20,
   likes: 10,
-  getTotalTweets: function () {
-    return this.tweets + this.responses + this.media + this.likes;
-  },
-  getGeneralInfo: function () {
-    return `This profile ${this.user} was created on ${this.signUpDate}`;
-  },
 };
 
-console.log("Nombre de usuario:" + user.username);
-console.log("Tweets totales: " + user.getTotalTweets());
-console.log(user.getGeneralInfo());
+console.log(user);
