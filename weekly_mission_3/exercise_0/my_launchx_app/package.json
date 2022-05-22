@@ -4,7 +4,7 @@
   "description": "my launchx app",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/jest",
+    "test": "jest",
     "start": "node index.js"
   },
   "author": "Marco A. Sánchez",
