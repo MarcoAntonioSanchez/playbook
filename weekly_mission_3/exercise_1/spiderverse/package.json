@@ -4,7 +4,7 @@
   "description": "spiderver exercise for bootcamp Launch X",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/.bin/jest"
   },
   "author": "Marco A. Sánchez",
   "license": "ISC",
