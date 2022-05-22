@@ -22,4 +22,12 @@ describe("Unit Tests for User class", () => {
     expect(user.getDateCreated).not.toBeNull();
     expect(user.getLastUpated).not.toBeNull();
   });
+
+  test("Add setters", () => {
+    const user = new User(3, "carlogilmar", "Carlo", "Bio");
+    user.setUsername = "Gilmar";
+    expect(user.username).toBe("Gilmar");
+    user.setBio = "New bio";
+    expect(user.bio).toBe("New bio");
+  });
 });
