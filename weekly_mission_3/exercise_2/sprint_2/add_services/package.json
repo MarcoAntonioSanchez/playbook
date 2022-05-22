@@ -1,0 +1,11 @@
+{
+  "name": "add_services",
+  "version": "1.0.0",
+  "description": "Adding services practice for Launch X",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco A. Sánchez",
+  "license": "ISC"
+}
