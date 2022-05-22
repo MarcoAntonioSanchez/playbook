@@ -1,10 +1,10 @@
 class User {
-  constructir(id, username, name, bio, dateCreate, lastUpdated) {
+  constructor(id, username, name, bio, dateCreated, lastUpdated) {
     this.id = id;
     this.username = username;
     this.name = name;
     this.bio = bio;
-    this.dateCreate = dateCreate;
+    this.dateCreated = dateCreated;
     this.lastUpdated = lastUpdated;
   }
 }
