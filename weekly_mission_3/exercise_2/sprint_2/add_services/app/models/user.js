@@ -6,6 +6,10 @@ class User {
     this.bio = bio;
   }
 
+  get getUsername() {
+    return this.username;
+  }
+
   set setUsername(newUsername) {
     this.username = newUsername;
   }
