@@ -5,6 +5,10 @@ class User {
     this.name = name;
     this.bio = bio;
   }
+
+  set setUsername(newUsername) {
+    this.username = newUsername;
+  }
 }
 
 module.exports = User;

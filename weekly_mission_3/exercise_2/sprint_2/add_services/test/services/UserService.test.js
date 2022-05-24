@@ -17,4 +17,17 @@ describe("Tests for UserService", () => {
     expect(userInfoInList[2]).toBe("Carlo");
     expect(userInfoInList[3]).toBe("Sin bio");
   });
+
+  test("3. Update username", () => {
+    const user = UserService.create(1, "carlogilmar", "Carlo");
+    UserService.updateUserUsername(user, "carlog");
+    expect(user.username).toBe("carlog");
+  });
+
+  test("4. Given a list of users give me the list of usernames", () => {
+    const user1 = UserService.create(1, "carlogilmar1", "Carlo");
+    const user2 = UserService.create(1, "carlogilmar2", "Carlo");
+    const user3 = UserService.create(1, "carlogilmar3", "Carlo");
+    const usernames = UserService.getALlUsernames([user1, user2, user3]);
+  });
 });
