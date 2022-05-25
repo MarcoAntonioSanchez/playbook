@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node ./node_modules/.bin/jest"
   },
-  "author": "MarcoAntonioSanchez",
+  "author": "Marco A. Sánchez",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.1.0"
