@@ -1,9 +1,12 @@
-const User = require("../../app/models/User");
+const UserService = require("../../app/models/User");
 
 class UserView {
-  static createUser(id, username, name) {
-    if ()
-    return new User(id, username, name);
+  static createUser(payload) {
+    return UserService.create(
+      payload.User,
+      payload.username_receiver,
+      payload.username_receptor
+    );
   }
 }
 
