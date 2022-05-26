@@ -11,12 +11,12 @@ Requerimientos:
 4. Verifica que se pueda crear un objeto `User`, al enviar un payload con las siguientes propiedades: `username`, `id` y `name`.
 */
 
-const UserView = require("../../../../sprint_3/add_views/app/views/UserView");
+const UserView = require("../../app/views/UserView");
 
 describe("Tests for UserView", () => {
   test("Return an error object when try to create a new user with an null payload", () => {
     const payload = null;
-    const result = UserViews.createUser(payload);
+    const result = UserView.createUser(payload);
     expect(result.error).toMatch(/payload no existe/);
   });
 });
