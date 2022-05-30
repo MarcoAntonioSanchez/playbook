@@ -17,9 +17,9 @@ app.listen(port, () => {
 app.get("/v1/explorers", (req, res) => {
   console.log(`APi Explorers GET ALL requests ${new Date()}`);
   const explorer1 = { id: 1, name: "Marco1" };
-  const explorer2 = { id: 1, name: "Marco2" };
-  const explorer3 = { id: 1, name: "Marco3" };
-  const explorer4 = { id: 1, name: "Marco" };
+  const explorer2 = { id: 2, name: "Marco2" };
+  const explorer3 = { id: 3, name: "Marco3" };
+  const explorer4 = { id: 4, name: "Marco" };
   const explorers = [explorer1, explorer2, explorer3, explorer4];
   res.status(200).json(explorers);
 });
