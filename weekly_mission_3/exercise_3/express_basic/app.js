@@ -12,8 +12,17 @@ app.get("/", (req, res) => {
   res.send("Hello friend");
 });
 
+// Responding text
+// Localhost:3000/launchx
 app.get("/launchx", (req, res) => {
   res.send("Welcome to launchX");
+});
+
+// Returning an object
+// Localhost:3000/explorersInNode
+app.get("/explorersInNode", (req, res) => {
+  const explorer = { name: "Explorer", msg: "Hello" };
+  res.send(explorer);
 });
 
 // Initializing the app
