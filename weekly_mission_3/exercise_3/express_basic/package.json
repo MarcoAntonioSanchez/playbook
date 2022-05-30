@@ -12,5 +12,8 @@
     "basic"
   ],
   "author": "Marco Antonio Sánchez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
