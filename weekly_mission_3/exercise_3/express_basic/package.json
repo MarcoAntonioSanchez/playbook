@@ -1,0 +1,16 @@
+{
+  "name": "express_basic",
+  "version": "1.0.0",
+  "description": "Basic express app for launch x exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "appp",
+    "basic"
+  ],
+  "author": "Marco Antonio Sánchez",
+  "license": "ISC"
+}
